@@ -2,7 +2,7 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <title>Pengeluaran</title>
+            <title>(nama Kategori)</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="title" content="Siskeu Dashboard" />
@@ -31,13 +31,13 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h3 class="mb-0">Nama Kategori</h3>
+                                    <h3 class="mb-0">(nama Kategori)</h3>
                                 </div>
                                 <div class="col-sm-6">
                                     <ol class="breadcrumb float-sm-end">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="kategoripengeluaran.php">Kategori Pengeluaran</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Nama Kategori</li>
+                                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="pengeluaran_kategori.php">Semua Kategori</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">(nama Kategori)</li>
                                     </ol>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="d-flex gap-2">
-                                    <button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
+                                    <button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_kegiatanform">
                                         <i class="bi bi-plus-lg"></i>
                                         <span>Pengeluaran</span>
                                     </button>
@@ -56,7 +56,7 @@
                                         <span>Cetak Laporan</span>
                                     </button>
                                     <div class="modal-container">
-                                        <?php include 'includes/forms/kegiatanform.php'; ?>
+                                        <?php include 'includes/forms/pengeluaran_input_kegiatan_form.php'; ?>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                             <tr class="align-middle">
                                                 <th>Tanggal</th>
                                                 <th>Sumber</th>
-                                                <th>Kegiatan</th>
+                                                <th>Kategori</th>
                                                 <th>Jumlah Pengeluaran</th>
                                                 <th>Nota</th>
                                                 <th>Catatan</th>
@@ -85,18 +85,18 @@
                                                 </td>
                                                 <td>Tahap 1 pembangunan jalan utama</td>
                                                 <td>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
+                                                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_kegiatanform">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/inputPengeluaranform.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran_input_kegiatan_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
-                                                    </div>                                                    
+                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="align-middle">
@@ -109,18 +109,18 @@
                                                 </td>
                                                 <td>Pelatihan selama 3 hari di balai desa</td>
                                                 <td>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
+                                                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_kegiatanform">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/inputPengeluaranform.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran_input_kegiatan_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
-                                                    </div>                                                    
+                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="align-middle">
@@ -133,18 +133,18 @@
                                                 </td>
                                                 <td>Pengadaan APD dan masker</td>
                                                 <td>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
+                                                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_kegiatanform">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/inputPengeluaranform.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran_input_kegiatan_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
-                                                    </div>                                                    
+                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>

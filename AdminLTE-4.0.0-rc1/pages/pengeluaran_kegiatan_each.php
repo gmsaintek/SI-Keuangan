@@ -2,10 +2,10 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <title>Pengeluaran</title>
+            <title>(nama kegiatan)</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="title" content="Siskeu Dashboard" />
+            <meta name="title" content="(nama kegiatan)" />
             <meta name="author" content="ColorlibHQ" />
             <meta name="description" content="Siskeu Desa Baha"/>
 
@@ -31,12 +31,13 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h3 class="mb-0">Pengeluaran</h3>
+                                    <h3 class="mb-0">(nama kegiatan)</h3>
                                 </div>
                                 <div class="col-sm-6">
                                     <ol class="breadcrumb float-sm-end">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Pengeluaran</li>
+                                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="pengeluaran_kegiatan.php">Semua Kegiatan</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">(nama kegiatan)</li>
                                     </ol>
                                 </div>
                             </div>
@@ -46,7 +47,7 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="d-flex gap-2">
-                                    <button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
+                                    <button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_kegiatanform">
                                         <i class="bi bi-plus-lg"></i>
                                         <span>Pengeluaran</span>
                                     </button>
@@ -55,7 +56,7 @@
                                         <span>Cetak Laporan</span>
                                     </button>
                                     <div class="modal-container">
-                                        <?php include 'includes/forms/kegiatanform.php'; ?>
+                                        <?php include 'includes/forms/pengeluaran_input_kegiatan_form.php'; ?>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +67,7 @@
                                             <tr class="align-middle">
                                                 <th>Tanggal</th>
                                                 <th>Sumber</th>
-                                                <th>Kegiatan</th>
+                                                <th>Kategori</th>
                                                 <th>Jumlah Pengeluaran</th>
                                                 <th>Nota</th>
                                                 <th>Catatan</th>
@@ -84,18 +85,24 @@
                                                 </td>
                                                 <td>Tahap 1 pembangunan jalan utama</td>
                                                 <td>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
+                                                    <button type="button" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#konfirmasiDone">
+                                                        <i class="bi bi-check2-square"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_kegiatanform">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/inputPengeluaranform.php'; ?>
+                                                        <?php include 'includes/forms/konfirmasi_done.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
-                                                    </div>                                                    
+                                                        <?php include 'includes/forms/pengeluaran_input_kegiatan_form.php'; ?>
+                                                    </div>
+                                                    <div class="modal-container">
+                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="align-middle">
@@ -108,18 +115,24 @@
                                                 </td>
                                                 <td>Pelatihan selama 3 hari di balai desa</td>
                                                 <td>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
+                                                    <button type="button" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#konfirmasiDone">
+                                                        <i class="bi bi-check2-square"></i>
+                                                    </button>
+                                                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_kegiatanform">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/inputPengeluaranform.php'; ?>
+                                                        <?php include 'includes/forms/konfirmasi_done.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
-                                                    </div>                                                    
+                                                        <?php include 'includes/forms/pengeluaran_input_kegiatan_form.php'; ?>
+                                                    </div>
+                                                    <div class="modal-container">
+                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr class="align-middle">
@@ -131,19 +144,8 @@
                                                     <a href="#">Nota</a>
                                                 </td>
                                                 <td>Pengadaan APD dan masker</td>
-                                                <td>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
-                                                        <i class="bi bi-pencil-square"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
-                                                        <i class="bi bi-trash"></i>
-                                                    </button>
-                                                    <div class="modal-container">
-                                                        <?php include 'includes/forms/inputPengeluaranform.php'; ?>
-                                                    </div>
-                                                    <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
-                                                    </div>                                                    
+                                                <td class="text-center">
+                                                    <span class="badge bg-success">Proses selesai</span>
                                                 </td>
                                             </tr>
                                         </tbody>

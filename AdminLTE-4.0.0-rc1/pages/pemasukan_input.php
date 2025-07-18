@@ -48,7 +48,7 @@
                     <i class="bi bi-plus-lg"></i>
                     <span>Pemasukan</span>
                   </button>
-                  <?php include 'includes/forms/inputpemasukanform.php'; ?>
+                  <?php include 'includes/forms/pemasukan_input_form.php'; ?>
                   <button type="button" class="btn btn-warning mb-2">
                     <i class="bi bi-printer"></i>
                     <span>Cetak Laporan</span>
@@ -79,7 +79,7 @@
                           <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputpemasukanform">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <?php include 'includes/forms/inputpemasukanform.php'; ?>
+                          <?php include 'includes/forms/pemasukan_input_form.php'; ?>
                           <button class="btn btn-sm btn-danger">
                             <i class="bi bi-trash"></i>
                           </button>
@@ -95,7 +95,7 @@
                           <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputpemasukanform">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <?php include 'includes/forms/inputpemasukanform.php'; ?>
+                          <?php include 'includes/forms/pemasukan_input_form.php'; ?>
                           <button class="btn btn-sm btn-danger">
                             <i class="bi bi-trash"></i>
                           </button>
@@ -111,7 +111,7 @@
                           <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputpemasukanform">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <?php include 'includes/forms/inputpemasukanform.php'; ?>
+                          <?php include 'includes/forms/pemasukan_input_form.php'; ?>
                           <button class="btn btn-sm btn-danger">
                             <i class="bi bi-trash"></i>
                           </button>

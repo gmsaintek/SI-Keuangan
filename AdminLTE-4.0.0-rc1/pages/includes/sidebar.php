@@ -18,41 +18,41 @@
         <hr class="my-3 text-secondary" />
         <ul class="nav sidebar-menu flex-column" role="menu">
             <li class="nav-item">
-                <a href="transaksi.php" class="nav-link">
+                <a href="transaksi_all.php" class="nav-link">
                     <i class="nav-icon bi bi-wallet"></i>
                     <p>Semua Transaksi</p>
                 </a>
             </li>
-            <li class="nav-header">Pemasukan</li>
-            <li class="nav-item">
-                <a href="inputpemasukan.php" class="nav-link">
-                    <i class="nav-icon bi bi-plus-circle"></i>
-                    <p>Input Pemasukan</p>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="sumberpemasukan.php" class="nav-link">
-                    <i class="nav-icon bi bi-bank"></i>
-                    <p>Sumber Dana</p>
-                </a>
-            </li>
             <li class="nav-header">Pengeluaran</li>
             <li class="nav-item">
-                <a href="inputpengeluaran.php" class="nav-link">
+                <a href="pengeluaran_input.php" class="nav-link">
                     <i class="nav-icon bi bi-cash-stack"></i>
                     <p>Input Pengeluaran</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="kegiatanpengeluaran.php" class="nav-link">
+                <a href="pengeluaran_kegiatan.php" class="nav-link">
                     <i class="nav-icon bi bi-calendar-event"></i>
                     <p>Kegiatan</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="kategoripengeluaran.php" class="nav-link">
+                <a href="pengeluaran_kategori.php" class="nav-link">
                     <i class="nav-icon bi bi-folder2"></i>
                     <p>Kategori Pengeluaran</p>
+                </a>
+            </li>
+            <li class="nav-header">Pemasukan</li>
+            <li class="nav-item">
+                <a href="pemasukan_input.php" class="nav-link">
+                    <i class="nav-icon bi bi-plus-circle"></i>
+                    <p>Input Pemasukan</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="pemasukan_sumberdana.php" class="nav-link">
+                    <i class="nav-icon bi bi-bank"></i>
+                    <p>Sumber Dana</p>
                 </a>
             </li>
             <hr class="my-3 text-secondary" />

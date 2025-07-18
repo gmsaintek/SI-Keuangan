@@ -2,10 +2,10 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <title>Pengeluaran</title>
+            <title>Kategori Pengeluaran</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="title" content="Siskeu Dashboard" />
+            <meta name="title" content="Kategori Pengeluaran" />
             <meta name="author" content="ColorlibHQ" />
             <meta name="description" content="Siskeu Desa Baha"/>
 
@@ -46,9 +46,9 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="d-flex gap-2">
-                                    <button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#kategoripengeluaranform">
+                                    <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#pengeluaran_kategoriform">
                                         <i class="bi bi-plus-lg"></i>
-                                        <span>Pengeluaran</span>
+                                        <span>Kategori</span>
                                     </button>
                                     <button type="button" class="btn btn-warning mb-2">
                                         <i class="bi bi-printer"></i>
@@ -56,7 +56,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-container">
-                                    <?php include 'includes/forms/kategoripengeluaranform.php'; ?>
+                                    <?php include 'includes/forms/pengeluaran_kategori_form.php'; ?>
                                 </div>
                             </div>
                             <div class="row">
@@ -80,22 +80,22 @@
                                                 <td>Rp50.000.000</td>
                                                 <td>-</td>
                                                 <td>
-                                                    <a href="kategoripengeluaran/perkategori.php" class="text-decoration-none">
+                                                    <a href="pengeluaran_kategori_each.php" class="text-decoration-none">
                                                         <button class="btn btn-sm btn-info">
                                                             <i class="bi bi-eye"></i>
                                                         </button>
                                                     </a>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kategoripengeluaranform">
+                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_kategoriform">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/kategoripengeluaranform.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran_kategori_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
+                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -106,22 +106,22 @@
                                                 <td>Rp5.000.000</td>
                                                 <td>-</td>
                                                 <td>
-                                                    <a href="kategoripengeluaran/perkategori.php" class="text-decoration-none">
+                                                    <a href="pengeluaran_kategori_each.php" class="text-decoration-none">
                                                         <button class="btn btn-sm btn-info">
                                                             <i class="bi bi-eye"></i>
                                                         </button>
                                                     </a>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kategoripengeluaranform">
+                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_kategoriform">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/kategoripengeluaranform.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran_kategori_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
+                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -132,22 +132,22 @@
                                                 <td>Rp50.000.000</td>
                                                 <td>-</td>
                                                 <td>
-                                                    <a href="kategoripengeluaran/perkategori.php" class="text-decoration-none">
+                                                    <a href="pengeluaran_kategori_each.php" class="text-decoration-none">
                                                         <button class="btn btn-sm btn-info">
                                                             <i class="bi bi-eye"></i>
                                                         </button>
                                                     </a>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kategoripengeluaranform">
+                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_kategoriform">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/kategoripengeluaranform.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran_kategori_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/yakin.php'; ?>
+                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
                                                     </div>
                                                 </td>
                                             </tr>

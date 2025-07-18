@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Siskeu Dashboard</title>
+        <title>Kegiatan</title>
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="title" content="Siskeu Dashboard" />
+        <meta name="title" content="Kegiatan" />
         <meta name="author" content="ColorlibHQ" />
         <meta name="description" content="Siskeu Desa Baha"/>
 
@@ -43,16 +43,16 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex gap-2">
-                                <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#kegiatanform">
+                                <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#pengeluaran_kegiatanform">
                                     <i class="bi bi-plus-lg"></i>
-                                    <span>Kegiatan Pengeluaran</span>
+                                    <span>Kegiatan</span>
                                 </button>
                                 <button type="button" class="btn btn-warning mb-2">
                                     <i class="bi bi-printer"></i>
                                     <span>Cetak Laporan</span>
                                 </button>
                                 <div class="modal-container">
-                                    <?php include 'includes/forms/kegiatanform.php'; ?>
+                                    <?php include 'includes/forms/pengeluaran_kegiatan_form.php'; ?>
                                 </div>
                             </div>
                         </div>
@@ -85,22 +85,22 @@
                                             </td>
                                             <td>Persiapan Acara</td>
                                             <td>
-                                                <a href="perkegiatan.php" class="text-decoration-none">
+                                                <a href="pengeluaran_kegiatan_each.php" class="text-decoration-none">
                                                     <button class="btn btn-sm btn-info">
                                                         <i class="bi bi-eye"></i>
                                                     </button>
                                                 </a>
-                                                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kegiatanform">
+                                                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_kegiatanform">
                                                     <i class="bi bi-pencil-square"></i>
                                                 </button>
-                                                <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
+                                                <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
                                                     <i class="bi bi-trash"></i>
                                                 </button>
                                                 <div class="modal-container">
-                                                    <?php include 'includes/forms/kegiatanform.php'; ?>
+                                                    <?php include 'includes/forms/pengeluaran_kegiatan_form.php'; ?>
                                                 </div>
                                                 <div class="modal-container">
-                                                    <?php include 'includes/forms/yakin.php'; ?>
+                                                    <?php include 'includes/forms/konfirmasi.php'; ?>
                                                 </div>
                                             </td>
                                         </tr>
@@ -118,3 +118,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./dist/js/adminlte.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+                    <script>
+                    $(document).ready(function () {
+                        $('#kegiatanPengeluaranTable').DataTable({
+                            lengthMenu: [5, 10, 25, 50, 100],
+                            pageLength: 10 // default entries shown
+                        });
+                    });
+                </script>

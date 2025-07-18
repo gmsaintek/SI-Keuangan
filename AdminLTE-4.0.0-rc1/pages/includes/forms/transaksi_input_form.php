@@ -1,9 +1,9 @@
-<div class="modal fade" id="mixedForm" tabindex="-1" aria-labelledby="mixedFormLabel" aria-hidden="true">
+<div class="modal fade" id="transaksi_inputForm" tabindex="-1" aria-labelledby="transaksi_inputFormLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
     
       <div class="modal-header">
-        <h5 class="modal-title" id="mixedFormLabel">Tambah Transaksi</h5>
+        <h5 class="modal-title" id="transaksi_inputFormLabel">Tambah Transaksi</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
@@ -128,6 +128,18 @@
       pemasukanForm.classList.remove('d-none');
     } else if (type === 'pengeluaran') {
       pengeluaranForm.classList.remove('d-none');
+    }
+  });
+</script>
+
+<script>
+  const dateInput = document.getElementById('date');
+  const todayCheck = document.getElementById('todayCheck');
+
+  todayCheck.addEventListener('change', function () {
+    if (this.checked) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.value = today;
     }
   });
 </script>

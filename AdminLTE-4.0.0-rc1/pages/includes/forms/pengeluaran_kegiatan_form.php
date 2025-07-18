@@ -1,8 +1,8 @@
-<div class="modal fade" id="kegiatanform" tabindex="-1" aria-labelledby="kegiatanformLabel" aria-hidden="true">
+<div class="modal fade" id="pengeluaran_kegiatanform" tabindex="-1" aria-labelledby="pengeluaran_kegiatanformLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="kegiatanformLabel">Input Kegiatan</h5>
+                <h5 class="modal-title" id="pengeluaran_kegiatanformLabel">Input Kegiatan</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

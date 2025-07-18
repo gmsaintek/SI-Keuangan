@@ -65,6 +65,7 @@
                         <th>Kegiatan</th>
                         <th>Kategori</th>
                         <th>Jumlah Pengeluaran</th>
+                        <th>Nota</th>
                         <th>Catatan</th>
                         <th>Aksi</th>
                       </tr>
@@ -76,15 +77,19 @@
                         <td>Pembangunan Jalan</td>
                         <td>Pelaksanaan Pembangunan Desa</td>
                         <td>Rp500.000.000</td>
+                        <td>
+                          <a href="#">Nota</a>
+                        </td>
                         <td>Tahap 1 pembangunan jalan utama</td>
                         <td>
                           <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <?php include 'includes/forms/inputPengeluaranform.php'; ?>
-                          <button class="btn btn-sm btn-danger">
+                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
                             <i class="bi bi-trash"></i>
                           </button>
+                          <?php include 'includes/forms/inputPengeluaranform.php'; ?>
+                          <?php include 'includes/forms/yakin.php'; ?>
                         </td>
                       </tr>
                       <tr class="align-middle">
@@ -93,15 +98,19 @@
                         <td>Pelatihan Kader Posyandu</td>
                         <td>Pembinaan Kemasyarakatan</td>
                         <td>Rp75.000.000</td>
+                        <td>
+                          <a href="#">Nota</a>
+                        </td>
                         <td>Pelatihan selama 3 hari di balai desa</td>
                         <td>
                           <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <?php include 'includes/forms/inputPengeluaranform.php'; ?>
-                          <button class="btn btn-sm btn-danger">
+                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
                             <i class="bi bi-trash"></i>
                           </button>
+                          <?php include 'includes/forms/inputPengeluaranform.php'; ?>
+                          <?php include 'includes/forms/yakin.php'; ?>
                         </td>
                       </tr>
                       <tr class="align-middle">
@@ -110,15 +119,19 @@
                         <td>Pembelian Alat Kesehatan</td>
                         <td>Penanggulangan Bencana</td>
                         <td>Rp120.000.000</td>
+                        <td>
+                          <a href="#">Nota</a>
+                        </td>
                         <td>Pengadaan APD dan masker</td>
                         <td>
                           <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputPengeluaranform">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <?php include 'includes/forms/inputPengeluaranform.php'; ?>
-                          <button class="btn btn-sm btn-danger">
+                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
                             <i class="bi bi-trash"></i>
                           </button>
+                          <?php include 'includes/forms/inputPengeluaranform.php'; ?>
+                          <?php include 'includes/forms/yakin.php'; ?>
                         </td>
                       </tr>
                     </tbody>

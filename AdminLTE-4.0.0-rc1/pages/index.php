@@ -6,7 +6,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="Siskeu Dashboard" />
-    <meta name="author" content="ColorlibHQ" />
+    <meta name="author" content="Gantari Mengwi" />
     <meta
       name="description"
       content="Siskeu Desa Baha"
@@ -299,7 +299,7 @@
     }
 
     // Default view
-    updateLineChart(lineChartData5Y);
+    updateLineChart(lineChartDataHari);
 
     // Line chart button listeners
     document.getElementById('btnLineHari').addEventListener('click', () => updateLineChart(lineChartDataHari));

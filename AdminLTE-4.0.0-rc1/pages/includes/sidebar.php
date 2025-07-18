@@ -36,12 +36,6 @@
                     <p>Sumber Dana</p>
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="kategoripemasukan.php" class="nav-link">
-                    <i class="nav-icon bi bi-tags"></i>
-                    <p>Kategori Pemasukan</p>
-                </a>
-            </li>
             <li class="nav-header">Pengeluaran</li>
             <li class="nav-item">
                 <a href="inputpengeluaran.php" class="nav-link">
@@ -56,7 +50,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="sourceoutput.php" class="nav-link">
+                <a href="kategoripengeluaran.php" class="nav-link">
                     <i class="nav-icon bi bi-folder2"></i>
                     <p>Kategori Pengeluaran</p>
                 </a>

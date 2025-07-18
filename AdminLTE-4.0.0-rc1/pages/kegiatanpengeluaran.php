@@ -43,11 +43,17 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex gap-2">
-                                <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#kegiatanPengeluaranform">
+                                <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#kegiatanform">
                                     <i class="bi bi-plus-lg"></i>
                                     <span>Kegiatan Pengeluaran</span>
                                 </button>
-                                <!--PHP form-->
+                                <button type="button" class="btn btn-warning mb-2">
+                                    <i class="bi bi-printer"></i>
+                                    <span>Cetak Laporan</span>
+                                </button>
+                                <div class="modal-container">
+                                    <?php include 'includes/forms/kegiatanform.php'; ?>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -55,18 +61,20 @@
                                 <table id="kegiatanPengeluaranTable" class="table table-striped">
                                     <thead>
                                         <tr class="align-middle">
+                                            <th>No.</th>
                                             <th>Kegiatan</th>
-                                            <th>Tanggal Mulai</th>
-                                            <th>Tanggal Selesai</th>
+                                            <th>Mulai</th>
+                                            <th>Selesai</th>
                                             <th>Anggaran (Rp)</th>
-                                            <th>Penggunaan sekarang (Rp)</th>
-                                            <th>Persentase Kemajuan</th>
+                                            <th>Pengeluaran (Rp)</th>
+                                            <th>Kemajuan</th>
                                             <th>Catatan</th>
-                                            <th>Aksi</th>
+                                            <th width="150px">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>1.</td>
                                             <td>Acara September</td>
                                             <td>01/09/2025</td>
                                             <td>30/09/2025</td>
@@ -77,16 +85,23 @@
                                             </td>
                                             <td>Persiapan Acara</td>
                                             <td>
-                                                <button class="btn btn-sm btn-info">
-                                                    <i class="bi bi-eye"></i>
-                                                </button>
-                                                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kategoripemasukanform">
+                                                <a href="perkegiatan.php" class="text-decoration-none">
+                                                    <button class="btn btn-sm btn-info">
+                                                        <i class="bi bi-eye"></i>
+                                                    </button>
+                                                </a>
+                                                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kegiatanform">
                                                     <i class="bi bi-pencil-square"></i>
                                                 </button>
-                                                <?php include 'includes/forms/kategoripemasukanform.php'; ?>
-                                                <button class="btn btn-sm btn-danger">
+                                                <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#areyousure">
                                                     <i class="bi bi-trash"></i>
                                                 </button>
+                                                <div class="modal-container">
+                                                    <?php include 'includes/forms/kegiatanform.php'; ?>
+                                                </div>
+                                                <div class="modal-container">
+                                                    <?php include 'includes/forms/yakin.php'; ?>
+                                                </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -99,3 +114,7 @@
         </div>
 
     </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/js/adminlte.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

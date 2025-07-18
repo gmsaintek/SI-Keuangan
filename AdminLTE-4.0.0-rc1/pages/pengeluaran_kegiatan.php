@@ -29,11 +29,11 @@
                 <div class="app-content-header">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-sm-6"><h3 class="mb-0">Kegiatan Pengeluaran</h3></div>
+                            <div class="col-sm-6"><h3 class="mb-0">Kegiatan</h3></div>
                             <div class="col-sm-6">
                                 <ol class="breadcrumb float-sm-end">
                                     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Kegiatan Pengeluaran</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Kegiatan</li>
                                 </ol>
                             </div>
                         </div>
@@ -43,16 +43,19 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="d-flex gap-2">
-                                <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#pengeluaran_kegiatanform">
+                                <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#kegiatan_input_form">
                                     <i class="bi bi-plus-lg"></i>
                                     <span>Kegiatan</span>
                                 </button>
-                                <button type="button" class="btn btn-warning mb-2">
+                                <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#cetaklaporan_kegiatan_all">
                                     <i class="bi bi-printer"></i>
                                     <span>Cetak Laporan</span>
                                 </button>
                                 <div class="modal-container">
-                                    <?php include 'includes/forms/pengeluaran_kegiatan_form.php'; ?>
+                                    <?php include 'includes/forms/pengeluaran/kegiatan_input_form.php'; ?>
+                                </div>
+                                <div class="modal-container">
+                                    <?php include 'includes/forms/cetak_laporan/kegiatan.php'; ?>
                                 </div>
                             </div>
                         </div>
@@ -65,6 +68,7 @@
                                             <th>Kegiatan</th>
                                             <th>Mulai</th>
                                             <th>Selesai</th>
+                                            <th>Bidang</th>
                                             <th>Anggaran (Rp)</th>
                                             <th>Pengeluaran (Rp)</th>
                                             <th>Kemajuan</th>
@@ -75,32 +79,33 @@
                                     <tbody>
                                         <tr>
                                             <td>1.</td>
-                                            <td>Acara September</td>
+                                            <td>Ekspansi perpustakaan SD</td>
                                             <td>01/09/2025</td>
                                             <td>30/09/2025</td>
+                                            <td>Pembangunan Desa</td>
                                             <td>1.000.000</td>
-                                            <td>500.000</td>
+                                            <td>750.000</td>
                                             <td>
                                                 <span class="badge bg-warning">50%</span>
                                             </td>
-                                            <td>Persiapan Acara</td>
+                                            <td>SD no.1</td>
                                             <td>
                                                 <a href="pengeluaran_kegiatan_each.php" class="text-decoration-none">
                                                     <button class="btn btn-sm btn-info">
                                                         <i class="bi bi-eye"></i>
                                                     </button>
                                                 </a>
-                                                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_kegiatanform">
+                                                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kegiatan_edit_form">
                                                     <i class="bi bi-pencil-square"></i>
                                                 </button>
-                                                <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
+                                                <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi_hapus">
                                                     <i class="bi bi-trash"></i>
                                                 </button>
                                                 <div class="modal-container">
-                                                    <?php include 'includes/forms/pengeluaran_kegiatan_form.php'; ?>
+                                                    <?php include 'includes/forms/pengeluaran/kegiatan_edit_form.php'; ?>
                                                 </div>
                                                 <div class="modal-container">
-                                                    <?php include 'includes/forms/konfirmasi.php'; ?>
+                                                    <?php include 'includes/forms/konfirmasi/hapus.php'; ?>
                                                 </div>
                                             </td>
                                         </tr>
@@ -111,6 +116,7 @@
                     </div>
                 </div>
             </main>
+            <?php include 'includes/footer.php'; ?>
         </div>
 
     </body>

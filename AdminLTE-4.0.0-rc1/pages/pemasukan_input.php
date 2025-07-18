@@ -33,7 +33,7 @@
                 <div class="col-sm-6"><h3 class="mb-0">Pemasukan</h3></div>
                 <div class="col-sm-6">
                   <ol class="breadcrumb float-sm-end">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Pemasukan</li>
                   </ol>
                 </div>
@@ -44,15 +44,20 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="d-flex gap-2">
-                  <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#inputpemasukanform">
+                  <button type="button" class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#pemasukan_inputform">
                     <i class="bi bi-plus-lg"></i>
                     <span>Pemasukan</span>
                   </button>
-                  <?php include 'includes/forms/pemasukan_input_form.php'; ?>
-                  <button type="button" class="btn btn-warning mb-2">
+                  <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#cetaklaporan_pemasukan">
                     <i class="bi bi-printer"></i>
                     <span>Cetak Laporan</span>
                   </button>
+                  <div class="modal-container">
+                    <?php include 'includes/forms/pemasukan/input_form.php'; ?>
+                  </div>
+                  <div class="modal-container">
+                    <?php include 'includes/forms/cetak_laporan/pemasukan.php'; ?>
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -62,7 +67,6 @@
                       <tr class="align-middle">
                         <th>Tanggal</th>
                         <th>Sumber</th>
-                        <th>Kategori</th>
                         <th>Jumlah Pemasukan</th>
                         <th>Catatan</th>
                         <th>Aksi</th>
@@ -72,49 +76,21 @@
                       <tr>
                         <td>11/07/2025</td>
                         <td>PBH</td>
-                        <td>Pajak</td>
                         <td>12.000.000.000</td>
                         <td>Pajak</td>
                         <td>
-                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputpemasukanform">
+                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pemasukan_editform">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <?php include 'includes/forms/pemasukan_input_form.php'; ?>
-                          <button class="btn btn-sm btn-danger">
+                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi_hapus">
                             <i class="bi bi-trash"></i>
                           </button>
-                        </td>
-                      </tr>
-                      <tr class="align-middle">
-                        <td>14/07/2025</td>
-                        <td>Sumbangan</td>
-                        <td>Sosial</td>
-                        <td>1.000.000</td>
-                        <td>Donasi warga</td>
-                        <td>
-                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputpemasukanform">
-                            <i class="bi bi-pencil-square"></i>
-                          </button>
-                          <?php include 'includes/forms/pemasukan_input_form.php'; ?>
-                          <button class="btn btn-sm btn-danger">
-                            <i class="bi bi-trash"></i>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr class="align-middle">
-                        <td>15/07/2025</td>
-                        <td>BUMDes</td>
-                        <td>Usaha</td>
-                        <td>5.000.000</td>
-                        <td>Pendapatan warung</td>
-                        <td>
-                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#inputpemasukanform">
-                            <i class="bi bi-pencil-square"></i>
-                          </button>
-                          <?php include 'includes/forms/pemasukan_input_form.php'; ?>
-                          <button class="btn btn-sm btn-danger">
-                            <i class="bi bi-trash"></i>
-                          </button>
+                          <div class="modal-container">
+                            <?php include 'includes/forms/pemasukan/edit_form.php'; ?>
+                          </div>
+                          <div class="modal-container">
+                            <?php include 'includes/forms/konfirmasi/hapus.php'; ?>
+                          </div>
                         </td>
                       </tr>
                     </tbody>
@@ -123,8 +99,8 @@
               </div>
             </div>
           </main>
+                    <?php include 'includes/footer.php';?>
         </div>  
-      <?php include 'includes/footer.php';?>
 
       <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

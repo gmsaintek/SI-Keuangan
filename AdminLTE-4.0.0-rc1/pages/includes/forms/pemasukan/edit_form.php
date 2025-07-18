@@ -1,14 +1,14 @@
-<div class="modal fade" id="pengeluaran_input_kegiatanform" tabindex="-1" aria-labelledby="pengeluaran_input_kegiatanformLabel" aria-hidden="true">
+<div class="modal fade" id="pemasukan_editform" tabindex="-1" aria-labelledby="pemasukan_editformLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="pengeluaran_input_kegiatanformLabel">Input pengeluaran</h5>
+        <h5 class="modal-title" id="pemasukan_editformLabel">Input Pemasukan</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="mb-3">
           <label for="date" class="form-label">Tanggal</label>
-          <input type="date" class="form-control" id="date"  required />
+          <input type="date" class="form-control" id="date" />
           <div class="form-check mt-2">
             <input class="form-check-input" type="checkbox" id="todayCheck" />
             <label class="form-check-label" for="todayCheck">Hari ini</label>
@@ -23,32 +23,19 @@
             <option value="3">BUMDes</option>
           </select>
         </div>
-        <div class="mb-3">
-          <label for="source" class="form-label">Kategori Pengeluaran</label>
-          <select class="form-select" id="cat">
-            <option selected>Pilih Kategori pengeluaran</option>
-            <option value="1">Pajak</option>
-            <option value="2">Sosial</option>
-            <option value="3">Usaha</option>
-          </select>
-        </div>
-        <label for="basic-url" class="form-label">Jumlah pengeluaran</label>
+        <label for="basic-url" class="form-label">Jumlah</label>        
         <div class="input-group mb-3">
           <span class="input-group-text">Rp</span>
-          <input type="number" class="form-control" aria-label="Jumlah pengeluaran" required>
+          <input type="number" class="form-control" aria-label="Jumlah Pemasukan">
           <span class="input-group-text">.00</span>
         </div>
-        <div class="mb-3">
-          <label for="formFile" class="form-label">Nota</label>
-          <input class="form-control" type="file" id="formFile">
-        </div>          
         <div class="mb-3">
           <label for="note" class="form-label">Catatan</label>
           <textarea class="form-control" id="note" rows="3"></textarea>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Simpan</button>
       </div>
     </div>

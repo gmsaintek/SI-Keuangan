@@ -2,10 +2,10 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <title>Ekspansi perpustakaan SD</title>
+            <title>Pemberdayaan Masyarakat</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="title" content="Ekspansi perpustakaan SD" />
+            <meta name="title" content="Siskeu Dashboard" />
             <meta name="author" content="ColorlibHQ" />
             <meta name="description" content="Siskeu Desa Baha"/>
 
@@ -31,13 +31,13 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h3 class="mb-0">Ekspansi perpustakaan SD</h3>
+                                    <h3 class="mb-0">Pemberdayaan Masyarakat</h3>
                                 </div>
                                 <div class="col-sm-6">
                                     <ol class="breadcrumb float-sm-end">
                                         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="pengeluaran_kegiatan.php">Semua Kegiatan</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Ekspansi perpustakaan SD</li>
+                                        <li class="breadcrumb-item"><a href="pengeluaran_bidang.php">Semua Bidang</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Pemberdayaan Masyarakat</li>
                                     </ol>
                                 </div>
                             </div>
@@ -47,19 +47,19 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="d-flex gap-2">
-                                    <button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#in_kegiatan_input_form">
+                                    <button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#in_bidang_input_form">
                                         <i class="bi bi-plus-lg"></i>
                                         <span>Pengeluaran</span>
                                     </button>
-                                    <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#cetaklaporan_kegiatan_each">
+                                    <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#cetaklaporan_bidang_each">
                                         <i class="bi bi-printer"></i>
                                         <span>Cetak Laporan</span>
                                     </button>
                                     <div class="modal-container">
-                                        <?php include 'includes/forms/pengeluaran/in_kegiatan_input_form.php'; ?>
+                                        <?php include 'includes/forms/pengeluaran/in_bidang_input_form.php'; ?>
                                     </div>
                                     <div class="modal-container">
-                                        <?php include 'includes/forms/cetak_laporan/kegiatan_each.php'; ?>
+                                        <?php include 'includes/forms/cetak_laporan/bidang_each.php'; ?>
                                     </div>
                                 </div>
                             </div>
@@ -71,6 +71,7 @@
                                                 <th>Tanggal</th>
                                                 <th>Nama</th>
                                                 <th>Sumber</th>
+                                                <th>Kegiatan</th>
                                                 <th>Sub-bidang</th>
                                                 <th>Jumlah Pengeluaran (Rp)</th>
                                                 <th>Nota</th>
@@ -83,27 +84,22 @@
                                                 <td>01/09/2025</td>
                                                 <td>Pengadaan Buku</td>
                                                 <td>Alokasi Dana Desa</td>
+                                                <td>Pengelolaan Perpustakaan SD</td>
                                                 <td>Pendidikan</td>
-                                                <td>250.000</td>
+                                                <td>250.000,00</td>
                                                 <td>
                                                     <a href="#">Nota</a>
                                                 </td>
                                                 <td>Belum sampai semua</td>
                                                 <td>
-                                                    <button type="button" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#konfirmasi_selesai">
-                                                        <i class="bi bi-check2-square"></i>
-                                                    </button>
-                                                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#in_kegiatan_edit_form">
+                                                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#in_bidang_edit_form">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
                                                     <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi_hapus">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/konfirmasi/selesai.php'; ?>
-                                                    </div>
-                                                    <div class="modal-container">
-                                                        <?php include 'includes/forms/pengeluaran/in_kegiatan_edit_form.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran/in_bidang_edit_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
                                                         <?php include 'includes/forms/konfirmasi/hapus.php'; ?>
@@ -114,16 +110,26 @@
                                                 <td>03/09/2025</td>
                                                 <td>Ekspansi Perpustakaan</td>
                                                 <td>Alokasi Dana Desa</td>
+                                                <td>Pengelolaan Perpustakaan SD</td>
                                                 <td>Pembangunan</td>
-                                                <td>Rp500.000</td>
+                                                <td>500.000,00</td>
                                                 <td>
                                                     <a href="#">Nota</a>
                                                 </td>
-                                                <td>Rak tambahan</td>
+                                                <td>Rak</td>
                                                 <td>
-                                                    <span class="badge bg-success">
-                                                        Selesai
-                                                    </span>
+                                                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#in_bidang_edit_form">
+                                                        <i class="bi bi-pencil-square"></i>
+                                                    </button>
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi_hapus">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                    <div class="modal-container">
+                                                        <?php include 'includes/forms/pengeluaran/in_bidang_edit_form.php'; ?>
+                                                    </div>
+                                                    <div class="modal-container">
+                                                        <?php include 'includes/forms/konfirmasi/hapus.php'; ?>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -132,8 +138,9 @@
                             </div>
                         </div>
                     </main>
-                    <?php include 'includes/footer.php';?>
+                <?php include 'includes/footer.php';?>
                 </div>  
+
 
             <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

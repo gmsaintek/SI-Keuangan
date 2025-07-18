@@ -34,8 +34,7 @@
             <div class="col-sm-6"><h3 class="mb-0">Dashboard</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                  <li class="breadcrumb-item active" aria-current="page">Periode (Month / Year)</li>
                 </ol>
               </div>
             </div>
@@ -50,7 +49,7 @@
                     <h3>Rp19.915.500.703,00</h3>
                     <p>Pemasukan total</p>
                   </div>
-                  <a href="inputpemasukan.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                  <a href="pemasukan_input.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                     More info
                     <i class="bi bi-link-45deg"></i>
                   </a>
@@ -62,7 +61,7 @@
                     <h3>Rp23.069.719.525,46</h3>
                     <p>Pengeluaran total</p>
                   </div>
-                  <a href="inputpengeluaran.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                  <a href="pengeluaran_input.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                     More info
                     <i class="bi bi-link-45deg"></i>
                   </a>
@@ -74,7 +73,7 @@
                     <h3>Rp3.154.018.822,46</h3>
                     <p>Surplus/<strong>defisit</strong> Anggaran</p>
                   </div>
-                  <a href="transaksi.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                  <a href="transaksi_all.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                     More info
                     <i class="bi bi-link-45deg"></i>
                   </a>
@@ -120,10 +119,10 @@
           </div>
         </div>
       </div>
+          <?php include 'includes/footer.php';?>
     </main>
-    <?php include 'includes/footer.php';?>
+
   </div>
-</body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./dist/js/adminlte.js"></script>
@@ -308,5 +307,5 @@
     document.getElementById('btnLine5Y').addEventListener('click', () => updateLineChart(lineChartData5Y));
   });
 </script>
-
+</body>
 </html>

@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Sumber Dana</title>
+    <title>Bidang Pengeluaran</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Sumber Dana" />
+    <meta name="title" content="Bidang Pengeluaran" />
     <meta name="author" content="ColorlibHQ" />
     <meta
       name="description"
@@ -32,12 +32,12 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6">
-              <h3 class="mb-0">Sumber Dana</h3>
+              <h3 class="mb-0">Bidang</h3>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-end">
                 <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Sumber Dana</li>
+                <li class="breadcrumb-item active" aria-current="page">Bidang</li>
               </ol>
             </div>
           </div>
@@ -46,35 +46,14 @@
       <div class="app-content">
         <div class="container-fluid">
           <div class="row">
-            <h4 class="mb-3">Total Sumber Dana</h4>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-6">
-              <div class="small-box text-bg-success">
-                <div class="inner">
-                  <h2>Total Sumber Dana</h2>
-                  <p class="mb-1">Anggaran: <strong>Rp100.800.000,00</strong></p>
-                  <p class="mb-1">Penggunaan: <strong>Rp75.000.000,00</strong></p>
-                </div>
-                <a href="pemasukan_input.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
-                  More info
-                  <i class="bi bi-link-45deg"></i>
-                </a>
-              </div>
-            </div>
-          </div> 
-          <div class="row">
-            <h4 class="mb-3">Sumber Dana</h4>
-          </div>
-          <div class="row">
             <div class="col-lg-4 col-6">
               <div class="small-box text-bg-primary">
                 <div class="inner">
-                  <h2>Penyelengaraan Permintahan Desa</h2>
-                  <p class="mb-1">Anggaran: <strong>Rp100.800.000,00</strong></p>
-                  <p class="mb-1">Penggunaan: <strong>Rp75.000.000,00</strong></p>
+                  <h2>Pemberdayaan Masyarakat</h2>
+                  <p class="mb-1">Anggaran: <strong>Rp1.100.000.000,00</strong></p>
+                  <p class="mb-1">Penggunaan: <strong>Rp750.000,00</strong></p>
                 </div>
-                <a href="pemasukan_sumberdana_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                <a href="pengeluaran_bidang_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                   More info
                   <i class="bi bi-link-45deg"></i>
                 </a>
@@ -83,11 +62,11 @@
             <div class="col-lg-4 col-6">
               <div class="small-box text-bg-danger">
                 <div class="inner">
-                  <h2>Penyelengaraan Permintahan Desa</h2>
-                  <p class="mb-1">Anggaran: <strong>Rp100.800.000,00</strong></p>
-                  <p class="mb-1">Penggunaan: <strong>Rp75.000.000,00</strong></p>
+                  <h2>Pembinaan kemasyarakatan</h2>
+                  <p class="mb-1">Anggaran: <strong>Rp17.730.909.167,00</strong></p>
+                  <p class="mb-1">Penggunaan: <strong>Rp5.000.000,00</strong></p>
                 </div>
-                <a href="pemasukan_sumberdana_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                <a href="pengeluaran_bidang_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                   More info
                   <i class="bi bi-link-45deg"></i>
                 </a>
@@ -96,11 +75,11 @@
             <div class="col-lg-4 col-6">
               <div class="small-box text-bg-warning">
                 <div class="inner">
-                  <h2>Penyelengaraan Permintahan Desa</h2>
-                  <p class="mb-1">Anggaran: <strong>Rp100.800.000,00</strong></p>
-                  <p class="mb-1">Penggunaan: <strong>Rp75.000.000,00</strong></p>
+                  <h2>Pelaksanaan Pembangunan Desa</h2>
+                  <p class="mb-1">Anggaran: <strong>Rp1.074.093.536,00</strong></p>
+                  <p class="mb-1">Penggunaan: <strong>Rp500.000,00</strong></p>
                 </div>
-                <a href="pemasukan_input.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                <a href="pengeluaran_bidang_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                   More info
                   <i class="bi bi-link-45deg"></i>
                 </a>
@@ -115,7 +94,7 @@
                   <p class="mb-1">Anggaran: <strong>Rp100.800.000,00</strong></p>
                   <p class="mb-1">Penggunaan: <strong>Rp75.000.000,00</strong></p>
                 </div>
-                <a href="pemasukan_sumberdana_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                <a href="pengeluaran_bidang_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                   More info
                   <i class="bi bi-link-45deg"></i>
                 </a>
@@ -124,11 +103,11 @@
             <div class="col-lg-4 col-6">
               <div class="small-box text-bg-info">
                 <div class="inner">
-                  <h2>Penyelengaraan Permintahan Desa</h2>
-                  <p class="mb-1">Anggaran: <strong>Rp100.800.000,00</strong></p>
+                  <h2>Penanggulangan Bencana, Darurat, dan Mendadak Desa</h2>
+                  <p class="mb-1">Anggaran: <strong>Rp75.000.000,00</strong></p>
                   <p class="mb-1">Penggunaan: <strong>Rp75.000.000,00</strong></p>
                 </div>
-                <a href="pemasukan_sumberdana_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
+                <a href="pengeluaran_bidang_each.php" class="small-box-footer link-light link-underline-opacity-0 link-underline-opacity-50-hover">
                   More info
                   <i class="bi bi-link-45deg"></i>
                 </a>
@@ -138,8 +117,9 @@
         </div>
       </div>
     </div>
+      <?php include 'includes/footer.php';?>
   </main>
-  <?php include 'includes/footer.php';?>
+
 </div>
 </body>
 

@@ -2,10 +2,10 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <title>Kategori Pengeluaran</title>
+            <title>Sub-bidang Pengeluaran</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="title" content="Kategori Pengeluaran" />
+            <meta name="title" content="Sub-bidang Pengeluaran" />
             <meta name="author" content="ColorlibHQ" />
             <meta name="description" content="Siskeu Desa Baha"/>
 
@@ -31,12 +31,12 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h3 class="mb-0">Kategori Pengeluaran</h3>
+                                    <h3 class="mb-0">Sub-bidang</h3>
                                 </div>
                                 <div class="col-sm-6">
                                     <ol class="breadcrumb float-sm-end">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Kategori Pengeluaran</li>
+                                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Sub-bidang</li>
                                     </ol>
                                 </div>
                             </div>
@@ -46,17 +46,20 @@
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="d-flex gap-2">
-                                    <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#pengeluaran_kategoriform">
+                                    <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#subbidang_input_form">
                                         <i class="bi bi-plus-lg"></i>
-                                        <span>Kategori</span>
+                                        <span>Bidang</span>
                                     </button>
-                                    <button type="button" class="btn btn-warning mb-2">
+                                    <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#cetaklaporan_subbidang_all">
                                         <i class="bi bi-printer"></i>
                                         <span>Cetak Laporan</span>
                                     </button>
                                 </div>
                                 <div class="modal-container">
-                                    <?php include 'includes/forms/pengeluaran_kategori_form.php'; ?>
+                                    <?php include 'includes/forms/pengeluaran/subbidang_input_form.php'; ?>
+                                </div>
+                                <div class="modal-container">
+                                    <?php include 'includes/forms/cetak_laporan/subbidang.php'; ?>
                                 </div>
                             </div>
                             <div class="row">
@@ -65,9 +68,8 @@
                                         <thead>
                                             <tr class="align-middle">
                                                 <th width="20px">No.</th>
-                                                <th>Nama Kategori</th>
-                                                <th width="150px">Anggaran (Rp)</th>
-                                                <th width="150px">Penggunaan Sekarang (Rp)</th>
+                                                <th>Nama Bidang</th>
+                                                <th>Pengeluaran sekarang (Rp)</th>
                                                 <th width="300px">Catatan</th>
                                                 <th>Aksi</th>
                                             </tr>
@@ -75,79 +77,51 @@
                                         <tbody>
                                             <tr>
                                                 <td>1.</td>
-                                                <td>Pelaksanaan Pembangunan Desa</td>
-                                                <td>Rp500.000.000</td>
-                                                <td>Rp50.000.000</td>
+                                                <td>Pendidikan</td>
+                                                <td>250.000,00</td>
                                                 <td>-</td>
                                                 <td>
-                                                    <a href="pengeluaran_kategori_each.php" class="text-decoration-none">
+                                                    <a href="pengeluaran_subbidang_each.php" class="text-decoration-none">
                                                         <button class="btn btn-sm btn-info">
                                                             <i class="bi bi-eye"></i>
                                                         </button>
                                                     </a>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_kategoriform">
+                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#subbidang_edit_form">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi_hapus">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/pengeluaran_kategori_form.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran/subbidang_edit_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
+                                                        <?php include 'includes/forms/konfirmasi/hapus.php'; ?>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="align-middle">
                                                 <td>2.</td>
-                                                <td>Pembinaan Kemasyarakatan</td>
-                                                <td>Rp75.000.000</td>
-                                                <td>Rp5.000.000</td>
+                                                <td>Pembangunan</td>
+                                                <td>500.000,00</td>
                                                 <td>-</td>
                                                 <td>
-                                                    <a href="pengeluaran_kategori_each.php" class="text-decoration-none">
+                                                    <a href="pengeluaran_subbidang_each.php" class="text-decoration-none">
                                                         <button class="btn btn-sm btn-info">
                                                             <i class="bi bi-eye"></i>
                                                         </button>
                                                     </a>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_kategoriform">
+                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#subbidang_edit_form">
                                                         <i class="bi bi-pencil-square"></i>
                                                     </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
+                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi_hapus">
                                                         <i class="bi bi-trash"></i>
                                                     </button>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/pengeluaran_kategori_form.php'; ?>
+                                                        <?php include 'includes/forms/pengeluaran/subbidang_edit_form.php'; ?>
                                                     </div>
                                                     <div class="modal-container">
-                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="align-middle">
-                                                <td>3.</td>
-                                                <td>Penanggulangan Bencana</td>
-                                                <td>Rp120.000.000</td>
-                                                <td>Rp50.000.000</td>
-                                                <td>-</td>
-                                                <td>
-                                                    <a href="pengeluaran_kategori_each.php" class="text-decoration-none">
-                                                        <button class="btn btn-sm btn-info">
-                                                            <i class="bi bi-eye"></i>
-                                                        </button>
-                                                    </a>
-                                                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_kategoriform">
-                                                        <i class="bi bi-pencil-square"></i>
-                                                    </button>
-                                                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
-                                                        <i class="bi bi-trash"></i>
-                                                    </button>
-                                                    <div class="modal-container">
-                                                        <?php include 'includes/forms/pengeluaran_kategori_form.php'; ?>
-                                                    </div>
-                                                    <div class="modal-container">
-                                                        <?php include 'includes/forms/konfirmasi.php'; ?>
+                                                        <?php include 'includes/forms/konfirmasi/hapus.php'; ?>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -157,8 +131,9 @@
                             </div>
                         </div>
                     </main>
+                    <?php include 'includes/footer.php';?>
                 </div>  
-                <?php include 'includes/footer.php';?>
+
 
                 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

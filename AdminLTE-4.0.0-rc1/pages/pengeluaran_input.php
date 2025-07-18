@@ -33,7 +33,7 @@
                 <div class="col-sm-6"><h3 class="mb-0">Pengeluaran</h3></div>
                 <div class="col-sm-6">
                   <ol class="breadcrumb float-sm-end">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Pengeluaran</li>
                   </ol>
                 </div>
@@ -48,11 +48,16 @@
                     <i class="bi bi-plus-lg"></i>
                     <span>Pengeluaran</span>
                   </button>
-                  <?php include 'includes/forms/pengeluaran_input_form.php'; ?>
-                  <button type="button" class="btn btn-warning mb-2">
+                  <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#cetaklaporan_pengeluaran">
                     <i class="bi bi-printer"></i>
                     <span>Cetak Laporan</span>
                   </button>
+                  <div class="modal-container" >
+                    <?php include 'includes/forms/pengeluaran/input_form.php'; ?>
+                  </div>
+                  <div class="modal-container" >
+                    <?php include 'includes/forms/cetak_laporan/pengeluaran.php'; ?>
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -61,10 +66,12 @@
                     <thead>
                       <tr class="align-middle">
                         <th>Tanggal</th>
+                        <th>Nama</th>
                         <th>Sumber</th>
                         <th>Kegiatan</th>
-                        <th>Kategori</th>
-                        <th>Jumlah Pengeluaran</th>
+                        <th>Bidang</th>
+                        <th>Sub-bidang</th>
+                        <th>Jumlah Pengeluaran (Rp)</th>
                         <th>Nota</th>
                         <th>Catatan</th>
                         <th>Aksi</th>
@@ -72,66 +79,57 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>01/06/2025</td>
-                        <td>Dana Desa</td>
-                        <td>Pembangunan Jalan</td>
-                        <td>Pelaksanaan Pembangunan Desa</td>
-                        <td>Rp500.000.000</td>
+                        <td>01/09/2025</td>
+                        <td>Pengadaan Buku</td>
+                        <td>Alokasi Dana Desa</td>
+                        <td>Pengelolaan Perpustakaan SD</td>
+                        <td>Pemberdayaan Masyarakat</td>
+                        <td>Pendidikan</td>
+                        <td>250.000,00</td>
                         <td>
                           <a href="#">Nota</a>
                         </td>
-                        <td>Tahap 1 pembangunan jalan utama</td>
+                        <td>Belum sampai semua</td>
                         <td>
-                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_form">
+                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_edit_form">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
+                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi_hapus">
                             <i class="bi bi-trash"></i>
                           </button>
-                          <?php include 'includes/forms/pengeluaran_input_form.php'; ?>
-                          <?php include 'includes/forms/konfirmasi.php'; ?>
+                          <div class="modal-container">
+                            <?php include 'includes/forms/pengeluaran/edit_form.php'; ?>
+                          </div>
+                          <div class="modal-container">
+                            <?php include 'includes/forms/konfirmasi/hapus.php'; ?>
+                          </div>
                         </td>
                       </tr>
-                      <tr class="align-middle">
-                        <td>03/07/2025</td>
-                        <td>ADD</td>
-                        <td>Pelatihan Kader Posyandu</td>
-                        <td>Pembinaan Kemasyarakatan</td>
-                        <td>Rp75.000.000</td>
+                      <tr>
+                        <td>03/09/2025</td>
+                        <td>Ekspansi Perpustakaan</td>
+                        <td>Alokasi Dana Desa</td>
+                        <td>Pengelolaan Perpustakaan SD</td>
+                        <td>Pemberdayaan Masyarakat</td>
+                        <td>Pembangunan</td>
+                        <td>500.000,00</td>
                         <td>
                           <a href="#">Nota</a>
                         </td>
-                        <td>Pelatihan selama 3 hari di balai desa</td>
+                        <td>Rak</td>
                         <td>
-                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_form">
+                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_edit_form">
                             <i class="bi bi-pencil-square"></i>
                           </button>
-                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
+                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi_hapus">
                             <i class="bi bi-trash"></i>
                           </button>
-                          <?php include 'includes/forms/pengeluaran_input_form.php'; ?>
-                          <?php include 'includes/forms/konfirmasi.php'; ?>
-                        </td>
-                      </tr>
-                      <tr class="align-middle">
-                        <td>07/07/2025</td>
-                        <td>PBH</td>
-                        <td>Pembelian Alat Kesehatan</td>
-                        <td>Penanggulangan Bencana</td>
-                        <td>Rp120.000.000</td>
-                        <td>
-                          <a href="#">Nota</a>
-                        </td>
-                        <td>Pengadaan APD dan masker</td>
-                        <td>
-                          <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#pengeluaran_input_form">
-                            <i class="bi bi-pencil-square"></i>
-                          </button>
-                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#konfirmasi">
-                            <i class="bi bi-trash"></i>
-                          </button>
-                          <?php include 'includes/forms/pengeluaran_input_form.php'; ?>
-                          <?php include 'includes/forms/konfirmasi.php'; ?>
+                          <div class="modal-container">
+                            <?php include 'includes/forms/pengeluaran/edit_form.php'; ?>
+                          </div>
+                          <div class="modal-container">
+                            <?php include 'includes/forms/konfirmasi/hapus.php'; ?>
+                          </div>
                         </td>
                       </tr>
                     </tbody>
@@ -140,8 +138,8 @@
               </div>
             </div>
           </main>
+                    <?php include 'includes/footer.php';?>
         </div>  
-      <?php include 'includes/footer.php';?>
 
       <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

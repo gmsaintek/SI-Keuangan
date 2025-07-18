@@ -49,10 +49,13 @@
                     <span>Transaksi</span>
                   </button>
                   <?php include 'includes/forms/mixedform.php'; ?>
-                  <button type="button" class="btn btn-warning mb-2">
+                  <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#cetaklaporanall">
                     <i class="bi bi-printer"></i>
                     <span>Cetak Laporan</span>
                   </button>
+                  <div class="modal-container">
+                    <?php include 'includes/forms/cetaklaporanall.php'; ?>
+                  </div>
                 </div>
               </div>
               <div class="row">

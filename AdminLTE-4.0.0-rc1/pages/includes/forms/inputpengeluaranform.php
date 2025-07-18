@@ -6,52 +6,56 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <label for="basic-url" class="form-label">Jumlah pengeluaran</label>
-          <div class="input-group mb-3">
-            <span class="input-group-text">Rp</span>
-            <input type="number" class="form-control" aria-label="Jumlah pengeluaran" required>
-            <span class="input-group-text">.00</span>
-          </div>
-          <div class="mb-3">
-            <label for="source" class="form-label">Sumber Dana</label>
-            <select class="form-select" id="source">
-              <option selected>Pilih Sumber Dana</option>
-              <option value="1">PBH</option>
-              <option value="2">Sumbangan</option>
-              <option value="3">BUMDes</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="source" class="form-label">Kegiatan</label>
-            <select class="form-select" id="source">
-              <option selected>Pilih Kegiatan</option>
-              <option value="1">PBH</option>
-              <option value="2">Sumbangan</option>
-              <option value="3">BUMDes</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="source" class="form-label">Kategori Pengeluaran</label>
-            <select class="form-select" id="cat">
-              <option selected>Pilih Kategori pengeluaran</option>
-              <option value="1">Pajak</option>
-              <option value="2">Sosial</option>
-              <option value="3">Usaha</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="date" class="form-label">Tanggal</label>
-            <input type="date" class="form-control" id="date"  required />
-            <div class="form-check mt-2">
-              <input class="form-check-input" type="checkbox" id="todayCheck" />
-              <label class="form-check-label" for="todayCheck">Hari ini</label>
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="note" class="form-label">Catatan</label>
-            <textarea class="form-control" id="note" rows="3"></textarea>
+        <div class="mb-3">
+          <label for="date" class="form-label">Tanggal</label>
+          <input type="date" class="form-control" id="date"  required />
+          <div class="form-check mt-2">
+            <input class="form-check-input" type="checkbox" id="todayCheck" />
+            <label class="form-check-label" for="todayCheck">Hari ini</label>
           </div>
         </div>
+        <div class="mb-3">
+          <label for="source" class="form-label">Sumber Dana</label>
+          <select class="form-select" id="source">
+            <option selected>Pilih Sumber Dana</option>
+            <option value="1">PBH</option>
+            <option value="2">Sumbangan</option>
+            <option value="3">BUMDes</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="source" class="form-label">Kegiatan</label>
+          <select class="form-select" id="source">
+            <option selected>Pilih Kegiatan</option>
+            <option value="1">PBH</option>
+            <option value="2">Sumbangan</option>
+            <option value="3">BUMDes</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="source" class="form-label">Kategori Pengeluaran</label>
+          <select class="form-select" id="cat">
+            <option selected>Pilih Kategori pengeluaran</option>
+            <option value="1">Pajak</option>
+            <option value="2">Sosial</option>
+            <option value="3">Usaha</option>
+          </select>
+        </div>
+        <label for="basic-url" class="form-label">Jumlah pengeluaran</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Rp</span>
+          <input type="number" class="form-control" aria-label="Jumlah pengeluaran" required>
+          <span class="input-group-text">.00</span>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Nota</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>          
+        <div class="mb-3">
+          <label for="note" class="form-label">Catatan</label>
+          <textarea class="form-control" id="note" rows="3"></textarea>
+        </div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
         <button type="button" class="btn btn-primary">Simpan</button>

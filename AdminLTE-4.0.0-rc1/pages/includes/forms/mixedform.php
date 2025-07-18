@@ -1,4 +1,3 @@
-<!-- Modal -->
 <div class="modal fade" id="mixedForm" tabindex="-1" aria-labelledby="mixedFormLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

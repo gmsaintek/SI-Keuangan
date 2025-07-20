@@ -16,29 +16,32 @@
         </div>
         <div class="mb-3">
           <label for="source_subbidang_input" class="form-label">Sumber Dana</label>
-          <select class="form-select" id="source_subbidang_input">
-            <option selected>Pilih Sumber Dana</option>
+          <select class="form-select" id="source_subbidang_input" required>
+            <option selected disabled>Pilih...</option>
             <option value="1">PBH</option>
-            <option value="2">Sumbangan</option>
-            <option value="3">BUMDes</option>
+            <option value="2">Dana Desa</option>
+            <option value="3">Alokasi Dana Desa</option>
+            <option value="4">Bantuan Keuangan Khusus Provinsi</option>
+            <option value="5">Bunga Bank</option>
           </select>
         </div>
                <div class="mb-3">
           <label for="activity_subbidang_input" class="form-label">Kegiatan</label>
           <select class="form-select" id="activity_subbidang_input">
-            <option selected>Pilih Kegiatan</option>
-            <option value="1">Pajak</option>
-            <option value="2">Sosial</option>
-            <option value="3">Usaha</option>
+            <option selected>Pilih...</option>
+            <option value="1">Pengelolaan Perpustakaan SD</option>
+            <option value="2">...</option>
           </select>
         </div>
         <div class="mb-3">
-          <label for="cat_subbidang_input" class="form-label">Bidang Pengeluaran</label>
-          <select class="form-select" id="cat_subbidang_input">
-            <option selected>Pilih Bidang pengeluaran</option>
-            <option value="1">Pajak</option>
-            <option value="2">Sosial</option>
-            <option value="3">Usaha</option>
+          <label for="cat_bidang_input" class="form-label">Bidang Pengeluaran</label>
+          <select class="form-select" id="cat_bidang_input" required>
+            <option selected disabled>Pilih...</option>
+            <option value="1">Pemberdayaan Masyarakat</option>
+            <option value="2">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+            <option value="3">Pembinaan Kemasyarakatan</option>
+            <option value="4">Pelaksanaan Pembangunan Desa</option>
+            <option value="5">Penyelenggaraan Pemerintahan Desa</option>
           </select>
         </div>
         <label for="basic-url_subbidang_input" class="form-label">Jumlah pengeluaran</label>
@@ -49,7 +52,7 @@
         </div>
         <div class="mb-3">
           <label for="formFile_subbidang_input" class="form-label">Nota</label>
-          <input class="form-control" type="file" id="formFile_subbidang_input">
+          <input class="form-control" type="file" id="formFile_subbidang_input" required>
         </div>          
         <div class="mb-3">
           <label for="note_subbidang_input" class="form-label">Catatan</label>
@@ -57,8 +60,9 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+        
         <button type="button" class="btn btn-primary">Simpan</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
       </div>
     </div>
   </div>

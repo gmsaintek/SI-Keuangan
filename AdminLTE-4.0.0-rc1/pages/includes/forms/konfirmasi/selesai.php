@@ -12,8 +12,8 @@
       </div>
 
       <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
         <button class="btn btn-danger">Simpan</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
       </div>
 
     </div>

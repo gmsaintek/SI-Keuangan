@@ -8,7 +8,7 @@
             <div class="modal-body">
                 <div class="mb-3">
                     <label for="basic-url_kegiatan_input" class="form-label">Kegiatan</label>
-                    <input type="text" class="form-control" aria-label="Nama Bidang">
+                    <input type="text" class="form-control" aria-label="Nama Kegiatan">
                 </div>
                 <div class="mb-3">
                     <label for="period_kegiatan_input" class="form-label">Periode</label>
@@ -26,11 +26,12 @@
                 <div class="mb-3">
                     <label for="cat_kegiatan_input" class="form-label">Bidang</label>
                     <select class="form-select" id="cat_kegiatan_input" required>
-                        <option selected>Pilih Bidang</option>
-                        <option value="1">Semua</option>
-                        <option value="2">PBH</option>
-                        <option value="3">Sumbangan</option>
-                        <option value="4">BUMDes</option>
+                        <option selected disabled>Pilih...</option>
+                        <option value="1">Pemberdayaan Masyarakat</option>
+                        <option value="2">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+                        <option value="3">Pembinaan Kemasyarakatan</option>
+                        <option value="4">Pelaksanaan Pembangunan Desa</option>
+                        <option value="5">Penyelenggaraan Pemerintahan Desa</option>
                     </select>
                 </div>
                 <label for="basic-url_kegiatan_input" class="form-label">Anggaran</label>
@@ -44,8 +45,9 @@
                     <textarea class="form-control" id="note_kegiatan_input" rows="3"></textarea>
                 </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
                 <button type="button" class="btn btn-primary">Simpan</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                
             </div>
         </div>
     </div>

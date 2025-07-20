@@ -16,20 +16,23 @@
         </div>
         <div class="mb-3">
           <label for="source_bidang_edit" class="form-label">Sumber Dana</label>
-          <select class="form-select" id="source_bidang_edit">
-            <option selected>Pilih Sumber Dana</option>
+          <select class="form-select" id="source_bidang_edit" required>
+            <option selected disabled>Pilih...</option>
             <option value="1">PBH</option>
-            <option value="2">Sumbangan</option>
-            <option value="3">BUMDes</option>
+            <option value="2">Dana Desa</option>
+            <option value="3">Alokasi Dana Desa</option>
+            <option value="4">Bantuan Keuangan Khusus Provinsi</option>
+            <option value="5">Bunga Bank</option>
           </select>
         </div>
+        
         <div class="mb-3">
           <label for="sub-cat_bidang_edit" class="form-label">Sub-bidang Pengeluaran</label>
-          <select class="form-select" id="sub-cat_bidang_edit">
-            <option selected>Pilih Sub-bidang pengeluaran</option>
-            <option value="1">Pajak</option>
-            <option value="2">Sosial</option>
-            <option value="3">Usaha</option>
+          <select class="form-select" id="sub-cat_bidang_edit" required>
+            <option selected disabled>Pilih...</option>
+            <option value="1">Pendidikan</option>
+            <option value="2">Pembangunan</option>
+            <option value="3">...</option>
           </select>
         </div>
         <label for="basic-url_bidang_edit" class="form-label">Jumlah pengeluaran</label>
@@ -40,7 +43,7 @@
         </div>
         <div class="mb-3">
           <label for="formFile_bidang_edit" class="form-label">Nota</label>
-          <input class="form-control" type="file" id="formFile_bidang_edit">
+          <input class="form-control" type="file" id="formFile_bidang_edit" required>
         </div>          
         <div class="mb-3">
           <label for="note_bidang_edit" class="form-label">Catatan</label>
@@ -48,8 +51,9 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
         <button type="button" class="btn btn-primary">Simpan</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+        
       </div>
     </div>
   </div>

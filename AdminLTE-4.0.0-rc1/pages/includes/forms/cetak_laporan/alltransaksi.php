@@ -11,7 +11,7 @@
                 <div class="mb-3">
                     <label for="formatPrint" class="form-label">Format Laporan</label>
                     <select class="form-select" id="formatPrint" required>
-                        <option selected>Pilih Format</option>
+                        <option selected disabled>Pilih...</option>
                         <option value="1">PDF</option>
                         <option value="2">XLSX</option>
                         <option value="3">CSV</option>
@@ -33,18 +33,20 @@
                 <div class="mb-3">
                     <label for="sourcePrint" class="form-label">Sumber Dana</label>
                     <select class="form-select" id="sourcePrint" required>
-                        <option selected>Pilih Sumber Dana</option>
+                        <option selected disabled>Pilih...</option>
                         <option value="1">Semua</option>
                         <option value="2">PBH</option>
-                        <option value="3">Sumbangan</option>
-                        <option value="4">BUMDes</option>
+                        <option value="3">Dana Desa</option>
+                        <option value="4">Alokasi Dana Desa</option>
+                        <option value="5">Bantuan Keuangan Khusus Provinsi</option>
+                        <option value="6">Bunga Bank</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="inputprintType" class="form-label">Jenis Transaksi</label>
                     <select class="form-select" id="inputprintType" required>
                         <option selected disabled>Pilih...</option>
-                        <option value="all">Semua Transaksi</option>
+                        <option value="all">Semua</option>
                         <option value="pemasukan">Pemasukan</option>
                         <option value="pengeluaran">Pengeluaran</option>
                     </select>
@@ -57,37 +59,42 @@
                 <div id="pengeluaranprintForm" class="d-none">
                     <div class="mb-3">
                         <label for="activityPrint" class="form-label">Kegiatan</label>
-                        <select class="form-select" id="activityPrint">
-                            <option selected>Pilih Kegiatan</option>
-                            <option value="1">PBH</option>
-                            <option value="2">Sumbangan</option>
-                            <option value="3">BUMDes</option>
+                        <select class="form-select" id="activityPrint" required>
+                            <option selected disabled>Pilih...</option>
+                            <option value="1">Semua</option>
+                            <option value="2">Pengelolaan Perpustakaan SD</option>
+                            <option value="3">...</option>
+                            <option value="4">Diluar kegiatan apa pun</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="catPrint" class="form-label">Bidang Pengeluaran</label>
-                        <select class="form-select" id="catPrint">
-                            <option selected>Pilih Bidang pengeluaran</option>
-                            <option value="1">Pajak</option>
-                            <option value="2">Sosial</option>
-                            <option value="3">Usaha</option>
+                        <select class="form-select" id="catPrint" required>
+                            <option selected disabled>Pilih...</option>
+                            <option value="1">Semua</option>
+                            <option value="2">Pemberdayaan Masyarakat</option>
+                            <option value="3">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+                            <option value="4">Pembinaan Kemasyarakatan</option>
+                            <option value="5">Pelaksanaan Pembangunan Desa</option>
+                            <option value="6">Penyelenggaraan Pemerintahan Desa</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="sub-catPrint" class="form-label">Sub-bidang Pengeluaran</label>
-                        <select class="form-select" id="sub-catPrint">
-                            <option selected>Pilih Sub-bidang pengeluaran</option>
-                            <option value="1">Pajak</option>
-                            <option value="2">Sosial</option>
-                            <option value="3">Usaha</option>
+                        <select class="form-select" id="sub-catPrint" required>
+                            <option selected disabled>Pilih...</option>
+                            <option value="1">Semua</option>
+                            <option value="2">Pendidikan</option>
+                            <option value="3">Pembangunan</option>
+                            <option value="4">...</option>
                         </select>
                     </div>
                 </div>
             </div>
 
             <div class="modal-footer">
+                <button class="btn btn-primary">Cetak</button>
                 <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <button class="btn btn-primary">Simpan</button>
             </div>
         </div>
     </div>

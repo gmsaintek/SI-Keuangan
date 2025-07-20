@@ -32,37 +32,40 @@
                 </div>
                 <div class="mb-3">
                     <label for="source_bidang_each" class="form-label">Sumber Dana</label>
-                    <select class="form-select" id="source_bidang_each" required>
-                        <option selected>Pilih Sumber Dana</option>
+                    <select class="form-select" id="sourcebidang_each" required>
+                        <option selected>Pilih...</option>
                         <option value="1">Semua</option>
                         <option value="2">PBH</option>
-                        <option value="3">Sumbangan</option>
-                        <option value="4">BUMDes</option>
+                        <option value="3">Dana Desa</option>
+                        <option value="4">Alokasi Dana Desa</option>
+                        <option value="5">Bantuan Keuangan Khusus Provinsi</option>
+                        <option value="6">Bunga Bank</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="activity_kegiatan_each" class="form-label">Kegiatan</label>
-                    <select class="form-select" id="activity_kegiatan_each">
-                        <option selected>Pilih Kegiatan</option>
-                        <option value="2">PBH</option>
-                        <option value="3">Sumbangan</option>
-                        <option value="4">BUMDes</option>
+                    <label for="activity_bidang_each" class="form-label">Kegiatan</label>
+                    <select class="form-select" id="activity_bidang_each">
+                        <option selected disabled>Pilih...</option>
+                        <option value="1">Semua</option>
+                        <option value="2">Pengelolaan Perpustakaan SD</option>
+                        <option value="3">...</option>
+                        <option value="4">Diluar kegiatan apa pun</option>
                     </select>
                 </div>
                 <div class="mb-3">
-                    <label for="cat_bidang_each" class="form-label">Sub-bidang</label>
-                    <select class="form-select" id="cat_bidang_each" required>
-                        <option selected>Pilih Sub-bidang</option>
+                    <label for="sub-cat_bidang_each" class="form-label">Sub-bidang Pengeluaran</label>
+                    <select class="form-select" id="sub-cat_bidang_each" required>
+                        <option selected disabled>Pilih...</option>
                         <option value="1">Semua</option>
-                        <option value="2">PBH</option>
-                        <option value="3">Sumbangan</option>
-                        <option value="4">BUMDes</option>
+                        <option value="2">Pendidikan</option>
+                        <option value="3">Pembangunan</option>
+                        <option value="4">...</option>
                     </select>
                 </div>
             </div>
             <div class="modal-footer">
+                <button class="btn btn-primary">Cetak</button>
                 <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <button class="btn btn-primary">Simpan</button>
             </div>
         </div>
     </div>

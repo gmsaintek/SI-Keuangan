@@ -2,25 +2,27 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="pemasukan_editformLabel">Input Pemasukan</h5>
+        <h5 class="modal-title" id="pemasukan_editformLabel">Edit Pemasukan</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="mb-3">
-          <label for="date" class="form-label">Tanggal</label>
-          <input type="date" class="form-control" id="date" />
+          <label for="date_edit_in" class="form-label">Tanggal</label>
+          <input type="date" class="form-control" id="date_edit_in" required />
           <div class="form-check mt-2">
             <input class="form-check-input" type="checkbox" id="todayCheck" />
             <label class="form-check-label" for="todayCheck">Hari ini</label>
           </div>
         </div>
         <div class="mb-3">
-          <label for="source" class="form-label">Sumber Dana</label>
-          <select class="form-select" id="source">
+          <label for="source_edit_in" class="form-label">Sumber Dana</label>
+          <select class="form-select" id="source_edit_in" required>
             <option selected>Pilih Sumber Dana</option>
             <option value="1">PBH</option>
-            <option value="2">Sumbangan</option>
-            <option value="3">BUMDes</option>
+            <option value="2">Dana Desa</option>
+            <option value="3">Alokasi Dana Desa</option>
+            <option value="4">Bantuan Keuangan Khusus Provinsi</option>
+            <option value="5">Bunga Bank</option>
           </select>
         </div>
         <label for="basic-url" class="form-label">Jumlah</label>        
@@ -30,13 +32,13 @@
           <span class="input-group-text">.00</span>
         </div>
         <div class="mb-3">
-          <label for="note" class="form-label">Catatan</label>
-          <textarea class="form-control" id="note" rows="3"></textarea>
+          <label for="note_edit_in" class="form-label">Catatan</label>
+          <textarea class="form-control" id="note_edit_in" rows="3"></textarea>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Simpan</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
       </div>
     </div>
   </div>

@@ -21,13 +21,13 @@
           <span class="input-group-text">.00</span>
         </div>
         <div class="mb-3">
-          <label for="note" class="form-label">Catatan</label>
-          <textarea class="form-control" id="note" rows="3"></textarea>
+          <label for="note_sumber_edit" class="form-label">Catatan</label>
+          <textarea class="form-control" id="note_sumber_edit" rows="3"></textarea>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Simpan</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
       </div>
     </div>
   </div>

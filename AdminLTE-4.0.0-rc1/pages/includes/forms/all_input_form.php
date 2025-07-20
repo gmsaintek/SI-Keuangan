@@ -10,10 +10,29 @@
       <div class="modal-body">
         <div class="mb-3">
           <label for="inputType_all" class="form-label">Jenis Transaksi</label>
-          <select class="form-select" id="inputType_all">
+          <select class="form-select" id="inputType_all" required>
             <option selected disabled>Pilih...</option>
             <option value="pemasukan">Pemasukan</option>
             <option value="pengeluaran">Pengeluaran</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="date_all" class="form-label">Tanggal</label>
+          <input type="date" class="form-control" id="date_all" required />
+          <div class="form-check mt-2">
+            <input class="form-check-input" type="checkbox" id="todayCheck_all" />
+            <label class="form-check-label" for="todayCheck_all">Hari ini</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="source_all" class="form-label">Sumber Dana</label>
+          <select class="form-select" id="source_all" required>
+            <option selected disabled>Pilih...</option>
+            <option value="1">PBH</option>
+            <option value="2">Dana Desa</option>
+            <option value="3">Alokasi Dana Desa</option>
+            <option value="4">Bantuan Keuangan Khusus Provinsi</option>
+            <option value="5">Bunga Bank</option>
           </select>
         </div>
 
@@ -21,25 +40,8 @@
           <label for="basic-url_all" class="form-label">Jumlah Pemasukan</label>
           <div class="input-group mb-3">
             <span class="input-group-text">Rp</span>
-            <input type="number" class="form-control" aria-label="Jumlah Pemasukan">
+            <input type="number" class="form-control" aria-label="Jumlah Pemasukan" required>
             <span class="input-group-text">.00</span>
-          </div>
-          <div class="mb-3">
-            <label for="source_all" class="form-label">Sumber Dana</label>
-            <select class="form-select" id="source_all">
-              <option selected>Pilih Sumber Dana</option>
-              <option value="1">PBH</option>
-              <option value="2">Sumbangan</option>
-              <option value="3">BUMDes</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="date_all" class="form-label">Tanggal</label>
-            <input type="date" class="form-control" id="date_all" />
-            <div class="form-check mt-2">
-              <input class="form-check-input" type="checkbox" id="todayCheck_all" />
-              <label class="form-check-label" for="todayCheck_all">Hari ini</label>
-            </div>
           </div>
           <div class="mb-3">
             <label for="note_all" class="form-label">Catatan</label>
@@ -55,48 +57,32 @@
             <span class="input-group-text">.00</span>
           </div>
           <div class="mb-3">
-            <label for="source_all" class="form-label">Sumber Dana</label>
-            <select class="form-select" id="source_all">
-              <option selected>Pilih Sumber Dana</option>
-              <option value="1">PBH</option>
-              <option value="2">Sumbangan</option>
-              <option value="3">BUMDes</option>
-            </select>
-          </div>
-          <div class="mb-3">
             <label for="activity_all" class="form-label">Kegiatan</label>
             <select class="form-select" id="activity_all">
-              <option selected>Pilih Kegiatan</option>
-              <option value="1">PBH</option>
-              <option value="2">Sumbangan</option>
-              <option value="3">BUMDes</option>
+              <option selected>Pilih...</option>
+              <option value="1">Pengelolaan Perpustakaan SD</option>
+              <option value="2">...</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="cat_all" class="form-label">Bidang Pengeluaran</label>
-            <select class="form-select" id="cat_all">
-              <option selected>Pilih Bidang pengeluaran</option>
-              <option value="1">Pajak</option>
-              <option value="2">Sosial</option>
-              <option value="3">Usaha</option>
+            <select class="form-select" id="cat_all" required>
+              <option selected disabled>Pilih...</option>
+              <option value="1">Pemberdayaan Masyarakat</option>
+              <option value="2">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+              <option value="3">Pembinaan Kemasyarakatan</option>
+              <option value="4">Pelaksanaan Pembangunan Desa</option>
+              <option value="5">Penyelenggaraan Pemerintahan Desa</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="sub-cat_all" class="form-label">Sub-bidang Pengeluaran</label>
-            <select class="form-select" id="sub-cat_all">
-              <option selected>Pilih Sub-bidang pengeluaran</option>
-              <option value="1">Pajak</option>
-              <option value="2">Sosial</option>
-              <option value="3">Usaha</option>
+            <select class="form-select" id="sub-cat_all" required>
+              <option selected disabled>Pilih...</option>
+              <option value="1">Pendidikan</option>
+              <option value="2">Pembangunan</option>
+              <option value="3">...</option>
             </select>
-          </div>
-          <div class="mb-3">
-            <label for="date_all" class="form-label">Tanggal</label>
-            <input type="date" class="form-control" id="date_all"  required />
-            <div class="form-check mt-2">
-              <input class="form-check-input" type="checkbox" id="todayCheck_all" />
-              <label class="form-check-label" for="todayCheck_all">Hari ini</label>
-            </div>
           </div>
           <div class="mb-3">
             <label for="note_all" class="form-label">Catatan</label>
@@ -106,8 +92,8 @@
       </div>
 
       <div class="modal-footer">
-        <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
         <button class="btn btn-primary">Simpan</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
       </div>
 
     </div>

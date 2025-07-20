@@ -48,7 +48,7 @@
                                 <div class="d-flex gap-2">
                                     <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#subbidang_input_form">
                                         <i class="bi bi-plus-lg"></i>
-                                        <span>Bidang</span>
+                                        <span>Sub-bidang</span>
                                     </button>
                                     <button type="button" class="btn btn-warning mb-2" data-bs-toggle="modal" data-bs-target="#cetaklaporan_subbidang_all">
                                         <i class="bi bi-printer"></i>

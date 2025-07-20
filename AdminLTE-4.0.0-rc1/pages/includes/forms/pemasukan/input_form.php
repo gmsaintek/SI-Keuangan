@@ -16,17 +16,19 @@
         </div>
         <div class="mb-3">
           <label for="source_in_input" class="form-label">Sumber Dana</label>
-          <select class="form-select" id="source_in_input">
+          <select class="form-select" id="source_in_input" required>
             <option selected>Pilih Sumber Dana</option>
             <option value="1">PBH</option>
-            <option value="2">Sumbangan</option>
-            <option value="3">BUMDes</option>
+            <option value="2">Dana Desa</option>
+            <option value="3">Alokasi Dana Desa</option>
+            <option value="4">Bantuan Keuangan Khusus Provinsi</option>
+            <option value="5">Bunga Bank</option>
           </select>
         </div>
         <label for="basic-url_in_input" class="form-label">Jumlah</label>        
         <div class="input-group mb-3">
           <span class="input-group-text">Rp</span>
-          <input type="number" class="form-control" aria-label="Jumlah Pemasukan">
+          <input type="number" class="form-control" aria-label="Jumlah Pemasukan" required>
           <span class="input-group-text">.00</span>
         </div>
         <div class="mb-3">
@@ -35,8 +37,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Simpan</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
       </div>
     </div>
   </div>

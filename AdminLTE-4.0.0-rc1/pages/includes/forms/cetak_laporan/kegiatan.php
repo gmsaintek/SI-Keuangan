@@ -33,18 +33,20 @@
                 <div class="mb-3">
                     <label for="cat_kegiatan_all" class="form-label">Bidang</label>
                     <select class="form-select" id="cat_kegiatan_all" required>
-                        <option selected>Pilih Sumber Dana</option>
+                        <option selected disabled>Pilih...</option>
                         <option value="1">Semua</option>
-                        <option value="2">PBH</option>
-                        <option value="3">Sumbangan</option>
-                        <option value="4">BUMDes</option>
+                        <option value="2">Pemberdayaan Masyarakat</option>
+                        <option value="3">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+                        <option value="4">Pembinaan Kemasyarakatan</option>
+                        <option value="5">Pelaksanaan Pembangunan Desa</option>
+                        <option value="6">Penyelenggaraan Pemerintahan Desa</option>
                     </select>
                 </div>
             </div>
 
             <div class="modal-footer">
+                <button class="btn btn-primary">Cetak</button>
                 <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <button class="btn btn-primary">Simpan</button>
             </div>
         </div>
     </div>

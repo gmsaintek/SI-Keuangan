@@ -5,7 +5,7 @@
       <title>Pemasukan</title>
     
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="title" content="Siskeu Dashboard" />
+      <meta name="title" content="Pemasukan" />
       <meta name="author" content="ColorlibHQ" />
       <meta name="description" content="Siskeu Desa Baha"/>
 

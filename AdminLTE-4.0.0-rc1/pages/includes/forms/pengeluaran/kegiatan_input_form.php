@@ -27,11 +27,11 @@
                     <label for="cat_kegiatan_input" class="form-label">Bidang</label>
                     <select class="form-select" id="cat_kegiatan_input" required>
                         <option selected disabled>Pilih...</option>
-                        <option value="1">Pemberdayaan Masyarakat</option>
-                        <option value="2">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
-                        <option value="3">Pembinaan Kemasyarakatan</option>
-                        <option value="4">Pelaksanaan Pembangunan Desa</option>
-                        <option value="5">Penyelenggaraan Pemerintahan Desa</option>
+                        <option value="Pemberdayaan">Pemberdayaan Masyarakat</option>
+                        <option value="Bencana">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+                        <option value="Pembinaan">Pembinaan Kemasyarakatan</option>
+                        <option value="Pembangunan">Pelaksanaan Pembangunan Desa</option>
+                        <option value="Pemerintahan">Penyelenggaraan Pemerintahan Desa</option>
                     </select>
                 </div>
                 <label for="basic-url_kegiatan_input" class="form-label">Anggaran</label>

@@ -12,9 +12,9 @@
                     <label for="formatPrint" class="form-label">Format Laporan</label>
                     <select class="form-select" id="formatPrint" required>
                         <option selected disabled>Pilih...</option>
-                        <option value="1">PDF</option>
-                        <option value="2">XLSX</option>
-                        <option value="3">CSV</option>
+                        <option value="PDF">PDF</option>
+                        <option value="XLSX">XLSX</option>
+                        <option value="CSV">CSV</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -25,21 +25,25 @@
                         <span class="input-group-text">Sampai</span>
                         <input type="date" class="form-control" id="endDatePrint" required>
                     </div>
-                    <div class="form-check mt-2">
+                    <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="todayCheckPrint" />
                         <label class="form-check-label" for="todayCheckPrint">Sampai hari ini</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="alltimePrint" />
+                        <label class="form-check-label" for="alltimePrint">Sepanjang Waktu</label>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="sourcePrint" class="form-label">Sumber Dana</label>
                     <select class="form-select" id="sourcePrint" required>
                         <option selected disabled>Pilih...</option>
-                        <option value="1">Semua</option>
-                        <option value="2">PBH</option>
-                        <option value="3">Dana Desa</option>
-                        <option value="4">Alokasi Dana Desa</option>
-                        <option value="5">Bantuan Keuangan Khusus Provinsi</option>
-                        <option value="6">Bunga Bank</option>
+                        <option value="Semua">Semua</option>
+                        <option value="PBH">PBH</option>
+                        <option value="DD">Dana Desa</option>
+                        <option value="ADD">Alokasi Dana Desa</option>
+                        <option value="BKK">Bantuan Keuangan Khusus Provinsi</option>
+                        <option value="Bunga">Bunga Bank</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -61,39 +65,39 @@
                         <label for="activityPrint" class="form-label">Kegiatan</label>
                         <select class="form-select" id="activityPrint" required>
                             <option selected disabled>Pilih...</option>
-                            <option value="1">Semua</option>
-                            <option value="2">Pengelolaan Perpustakaan SD</option>
-                            <option value="3">...</option>
-                            <option value="4">Diluar kegiatan apa pun</option>
+                            <option value="Semua">Semua</option>
+                            <option value="Perpustakaan">Pengelolaan Perpustakaan SD</option>
+                            <option value="...">...</option>
+                            <option value="Diluar">Diluar kegiatan apa pun</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="catPrint" class="form-label">Bidang Pengeluaran</label>
                         <select class="form-select" id="catPrint" required>
                             <option selected disabled>Pilih...</option>
-                            <option value="1">Semua</option>
-                            <option value="2">Pemberdayaan Masyarakat</option>
-                            <option value="3">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
-                            <option value="4">Pembinaan Kemasyarakatan</option>
-                            <option value="5">Pelaksanaan Pembangunan Desa</option>
-                            <option value="6">Penyelenggaraan Pemerintahan Desa</option>
+                            <option value="Semua">Semua</option>
+                            <option value="Pemberdayaan">Pemberdayaan Masyarakat</option>
+                            <option value="Bencana">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+                            <option value="Pembinaan">Pembinaan Kemasyarakatan</option>
+                            <option value="Pembangunan">Pelaksanaan Pembangunan Desa</option>
+                            <option value="Pemerintahan">Penyelenggaraan Pemerintahan Desa</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="sub-catPrint" class="form-label">Sub-bidang Pengeluaran</label>
                         <select class="form-select" id="sub-catPrint" required>
                             <option selected disabled>Pilih...</option>
-                            <option value="1">Semua</option>
-                            <option value="2">Pendidikan</option>
-                            <option value="3">Pembangunan</option>
-                            <option value="4">...</option>
+                            <option value="Semua">Semua</option>
+                            <option value="Pendidikan">Pendidikan</option>
+                            <option value="Pembangunan">Pembangunan</option>
+                            <option value="...">...</option>
                         </select>
                     </div>
                 </div>
             </div>
 
             <div class="modal-footer">
-                <button class="btn btn-primary">Cetak</button>
+                <button class="btn btn-warning">Cetak</button>
                 <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
             </div>
         </div>
@@ -122,13 +126,30 @@
 </script>
 
 <script>
-  const dateInput_print = document.querySelector('#cetaklaporan_alltransaksi #endDatePrint');
-  const todayCheck_print = document.querySelector('#cetaklaporan_alltransaksi #todayCheckPrint');
+    const startInput = document.getElementById("startDatePrint");
+    const endInput = document.getElementById("endDatePrint");
+    const todayCheck = document.getElementById("todayCheckPrint");
+    const allTimeCheck = document.getElementById("alltimePrint");
 
-  todayCheck_print.addEventListener('change', function () {
-    if (this.checked) {
-      const today = new Date().toISOString().split('T')[0];
-      dateInput_print.value = today;
-    }
-  });
+    todayCheck.addEventListener("change", function () {
+        if (this.checked) {
+            const today = new Date().toISOString().slice(0, 10);
+            endInput.value = today;
+        }
+    });
+
+    allTimeCheck.addEventListener("change", function () {
+        const isChecked = this.checked;
+        startInput.disabled = isChecked;
+        endInput.disabled = isChecked;
+
+        if (isChecked) {
+            startInput.value = "";
+            endInput.value = "";
+            todayCheck.disabled = true;
+        } else {
+            todayCheck.disabled = false;
+        }
+    });
 </script>
+

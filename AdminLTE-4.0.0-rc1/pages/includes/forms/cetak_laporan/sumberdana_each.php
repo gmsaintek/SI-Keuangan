@@ -11,10 +11,10 @@
                 <div class="mb-3">
                     <label for="format_sumber_each" class="form-label">Format Laporan</label>
                     <select class="form-select" id="format_sumber_each" required>
-                        <option selected>Pilih Format</option>
-                        <option value="1">PDF</option>
-                        <option value="2">XLSX</option>
-                        <option value="3">CSV</option>
+                        <option selected disabled>Pilih...</option>
+                        <option value="PDF">PDF</option>
+                        <option value="XLSX">XLSX</option>
+                        <option value="CSV">CSV</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-primary">Cetak</button>
+                <button class="btn btn-warning">Cetak</button>
                 <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
             </div>
         </div>

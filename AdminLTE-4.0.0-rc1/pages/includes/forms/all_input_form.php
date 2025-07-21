@@ -28,11 +28,11 @@
           <label for="source_all" class="form-label">Sumber Dana</label>
           <select class="form-select" id="source_all" required>
             <option selected disabled>Pilih...</option>
-            <option value="1">PBH</option>
-            <option value="2">Dana Desa</option>
-            <option value="3">Alokasi Dana Desa</option>
-            <option value="4">Bantuan Keuangan Khusus Provinsi</option>
-            <option value="5">Bunga Bank</option>
+            <option value="PBH">PBH</option>
+            <option value="DD">Dana Desa</option>
+            <option value="ADD">Alokasi Dana Desa</option>
+            <option value="BKK">Bantuan Keuangan Khusus Provinsi</option>
+            <option value="Bunga">Bunga Bank</option>
           </select>
         </div>
 
@@ -59,29 +59,30 @@
           <div class="mb-3">
             <label for="activity_all" class="form-label">Kegiatan</label>
             <select class="form-select" id="activity_all">
-              <option selected>Pilih...</option>
-              <option value="1">Pengelolaan Perpustakaan SD</option>
-              <option value="2">...</option>
+              <option selected disabled>Pilih...</option>
+              <option value="Perpustakaan">Pengelolaan Perpustakaan SD</option>
+              <option value="...">...</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="cat_all" class="form-label">Bidang Pengeluaran</label>
             <select class="form-select" id="cat_all" required>
               <option selected disabled>Pilih...</option>
-              <option value="1">Pemberdayaan Masyarakat</option>
-              <option value="2">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
-              <option value="3">Pembinaan Kemasyarakatan</option>
-              <option value="4">Pelaksanaan Pembangunan Desa</option>
-              <option value="5">Penyelenggaraan Pemerintahan Desa</option>
+              <option value="Semua">Semua</option>
+              <option value="Pemberdayaan">Pemberdayaan Masyarakat</option>
+              <option value="Bencana">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+              <option value="Pembinaan">Pembinaan Kemasyarakatan</option>
+              <option value="Pembangunan">Pelaksanaan Pembangunan Desa</option>
+              <option value="Pemerintahan">Penyelenggaraan Pemerintahan Desa</option>
             </select>
           </div>
           <div class="mb-3">
             <label for="sub-cat_all" class="form-label">Sub-bidang Pengeluaran</label>
             <select class="form-select" id="sub-cat_all" required>
               <option selected disabled>Pilih...</option>
-              <option value="1">Pendidikan</option>
-              <option value="2">Pembangunan</option>
-              <option value="3">...</option>
+              <option value="Pendidikan">Pendidikan</option>
+              <option value="Pembangunan">Pembangunan</option>
+              <option value="...">...</option>
             </select>
           </div>
           <div class="mb-3">

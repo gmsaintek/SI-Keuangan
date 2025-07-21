@@ -11,10 +11,10 @@
                 <div class="mb-3">
                     <label for="format_cetak_pemasukan" class="form-label">Format Laporan</label>
                     <select class="form-select" id="format_cetak_pemasukan" required>
-                        <option selected>Pilih Format</option>
-                        <option value="1">PDF</option>
-                        <option value="2">XLSX</option>
-                        <option value="3">CSV</option>
+                        <option selected disabled>Pilih...</option>
+                        <option value="PDF">PDF</option>
+                        <option value="XLSX">XLSX</option>
+                        <option value="CSV">CSV</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -33,19 +33,19 @@
                 <div class="mb-3">
                     <label for="source_cetak_pemasukan" class="form-label">Sumber Dana</label>
                     <select class="form-select" id="source_cetak_pemasukan" required>
-                        <option selected>Pilih...</option>
-                        <option value="1">Semua</option>
-                        <option value="2">PBH</option>
-                        <option value="3">Dana Desa</option>
-                        <option value="4">Alokasi Dana Desa</option>
-                        <option value="5">Bantuan Keuangan Khusus Provinsi</option>
-                        <option value="6">Bunga Bank</option>
+                        <option selected disabled>Pilih...</option>
+                        <option value="Semua">Semua</option>
+                        <option value="PBH">PBH</option>
+                        <option value="DD">Dana Desa</option>
+                        <option value="ADD">Alokasi Dana Desa</option>
+                        <option value="BKK">Bantuan Keuangan Khusus Provinsi</option>
+                        <option value="Bunga">Bunga Bank</option>
                     </select>
                 </div>
             </div>
 
             <div class="modal-footer">
-                <button class="btn btn-primary">Cetak</button>
+                <button class="btn btn-warning">Cetak</button>
                 <button class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
             </div>
         </div>

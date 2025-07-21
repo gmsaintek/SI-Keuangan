@@ -18,30 +18,30 @@
           <label for="source_subbidang_edit" class="form-label">Sumber Dana</label>
           <select class="form-select" id="source_subbidang_edit" required>
             <option selected disabled>Pilih...</option>
-            <option value="1">PBH</option>
-            <option value="2">Dana Desa</option>
-            <option value="3">Alokasi Dana Desa</option>
-            <option value="4">Bantuan Keuangan Khusus Provinsi</option>
-            <option value="5">Bunga Bank</option>
+            <option value="PBH">PBH</option>
+            <option value="DD">Dana Desa</option>
+            <option value="ADD">Alokasi Dana Desa</option>
+            <option value="BKK">Bantuan Keuangan Khusus Provinsi</option>
+            <option value="Bunga">Bunga Bank</option>
           </select>
         </div>
                <div class="mb-3">
           <label for="activity_subbidang_edit" class="form-label">Kegiatan</label>
           <select class="form-select" id="activity_subbidang_edit">
             <option selected>Pilih...</option>
-            <option value="1">Pengelolaan Perpustakaan SD</option>
-            <option value="2">...</option>
+            <option value="Pengelolaan">Pengelolaan Perpustakaan SD</option>
+            <option value="...">...</option>
           </select>
         </div>
         <div class="mb-3">
           <label for="cat_bidang_edit" class="form-label">Bidang Pengeluaran</label>
           <select class="form-select" id="cat_bidang_edit" required>
             <option selected disabled>Pilih...</option>
-            <option value="1">Pemberdayaan Masyarakat</option>
-            <option value="2">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
-            <option value="3">Pembinaan Kemasyarakatan</option>
-            <option value="4">Pelaksanaan Pembangunan Desa</option>
-            <option value="5">Penyelenggaraan Pemerintahan Desa</option>
+            <option value="Pemberdayaan">Pemberdayaan Masyarakat</option>
+            <option value="Bencana">Penanggulangan Bencana, Darurat, dan Mendesak Desa</option>
+            <option value="Pembinaan">Pembinaan Kemasyarakatan</option>
+            <option value="Pembangunan">Pelaksanaan Pembangunan Desa</option>
+            <option value="Pemerintahan">Penyelenggaraan Pemerintahan Desa</option>
           </select>
         </div>
         <label for="basic-url_subbidang_edit" class="form-label">Jumlah pengeluaran</label>

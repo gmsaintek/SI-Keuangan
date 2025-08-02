@@ -1,0 +1,135 @@
+ERROR - 2025-08-02 01:56:26 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\BaseModel.php(679): CodeIgniter\Model->doFindAll()
+#6 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\app\Controllers\PengeluaranSubbidang.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(933): App\Controllers\PengeluaranSubbidang->index()
+#8 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\BaseModel.php(679): CodeIgniter\Model->doFindAll()
+#5 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\app\Controllers\PengeluaranSubbidang.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(933): App\Controllers\PengeluaranSubbidang->index()
+#7 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-08-02 01:56:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: pengeluaran_subbidang]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\PengeluaranSubbidang.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengeluaranSubbidang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\akhta\\Downloads\\SI-Keuangan\\ci4app\\public\\index.php')
+ERROR - 2025-08-02 01:56:37 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\BaseModel.php(679): CodeIgniter\Model->doFindAll()
+#6 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\app\Controllers\PengeluaranSubbidang.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(933): App\Controllers\PengeluaranSubbidang->index()
+#8 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\BaseModel.php(679): CodeIgniter\Model->doFindAll()
+#5 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\app\Controllers\PengeluaranSubbidang.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(933): App\Controllers\PengeluaranSubbidang->index()
+#7 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\Users\akhta\Downloads\SI-Keuangan\ci4app\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-08-02 01:56:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: pengeluaran_subbidang]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\PengeluaranSubbidang.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengeluaranSubbidang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\akhta\\Downloads\\SI-Keuangan\\ci4app\\public\\index.php')
+DEBUG - 2025-08-02 05:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-02 06:46:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pengeluaran_subbidang_print.php"
+[Method: GET, Route: pengeluaran_subbidang/cetak]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\PengeluaranSubbidang.php(70): view()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengeluaranSubbidang->cetak()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\akhta\\Downloads\\SI-Keuangan\\ci4app\\public\\index.php')
+CRITICAL - 2025-08-02 06:59:11 --> ErrorException: Undefined variable $row
+[Method: GET, Route: pengeluaran_subbidang_each/1]
+in APPPATH\Views\includes\forms\konfirmasi\hapus.php on line 1.
+ 1 APPPATH\Views\includes\forms\konfirmasi\hapus.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\akhta\\Downloads\\SI-Keuangan\\ci4app\\app\\Views\\includes\\forms\\konfirmasi\\hapus.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render()
+ 5 APPPATH\Views\pengeluaran_subbidang_each.php(92): view()
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\Users\\akhta\\Downloads\\SI-Keuangan\\ci4app\\app\\Views\\pengeluaran_subbidang_each.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():221}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render()
+ 9 APPPATH\Controllers\PengeluaranSubbidangEach.php(9): view()
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PengeluaranSubbidangEach->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\akhta\\Downloads\\SI-Keuangan\\ci4app\\public\\index.php')
+DEBUG - 2025-08-02 07:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-02 07:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
